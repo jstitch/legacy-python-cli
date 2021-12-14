@@ -2,7 +2,7 @@ from threading import RLock
 try:
     from UserDict import DictMixin
 except ImportError:
-    from collections import Mapping as DictMixin
+    from collections.abc import Mapping as DictMixin
 
 
 # With lazy loading, we might end up with multiple threads triggering

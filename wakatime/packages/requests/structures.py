@@ -12,7 +12,7 @@ import collections
 from .compat import OrderedDict
 
 
-class CaseInsensitiveDict(collections.MutableMapping):
+class CaseInsensitiveDict(collections.abc.MutableMapping):
     """A case-insensitive ``dict``-like object.
 
     Implements all methods and operations of
